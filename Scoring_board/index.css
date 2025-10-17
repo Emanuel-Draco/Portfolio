@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Digital7';
+  src: url('digitalMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.container_timer, .LeftScorePart, .rightScorePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_sides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.timer_text, .teamName {
+  font-size: 35px;
+  color: #072541;
+  background-color: #E6EFBF;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+#timeDisplay, #leftBoard, #rightBoard {
+  font-size: 75px;
+  color: #FAAC64;
+  font-family: 'Digital7', Courier, monospace;
+  margin-bottom: 20px;
+}
+
+#resultPrompt {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#resultPrompt p {
+  background-color: #E6EFBF;
+  color: #072541;
+  display: block;
+  padding: 5px 12px;
+  border-radius: 8px;
+  margin: 8px auto;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.timerBtn, .BtnDesign {
+  width: 80px;
+  height: 30px;
+  border-radius: 12px;
+  background-color: #FAAC64;
+  color: #072541;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #072541;
+}
+
+.saveBtnDesign{
+  height: 30px;
+  border-radius: 12px;
+  background-color: #FAAC64;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

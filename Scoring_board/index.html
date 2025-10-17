@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body bgcolor="4AC3BE">
+
+        <div class="container_sides">
+            <div class="container_timer">
+                    <span class="timer_text">Timer</span>
+                <div id="time_container">
+                    <div id="timeDisplay">00:00:00</div>
+                    <button id="startBtn" class="timerBtn">Start</button>
+                    <button id="pauseBtn" class="timerBtn">Pause</button>
+                    <button id="resetBtn" class="timerBtn">Reset</button>
+                </div>
+            </div>
+                
+            <div class="LeftScorePart">
+                <span class="teamName">Team A</span>
+                <div id="leftBoard" >0</div>
+                <div class="buttonRow">
+                    <button class="BtnDesign" onclick="leftScorePlus()">+</button>
+                    <button class="BtnDesign" onclick="leftScoreMinus()">-</button>
+                    <button class="BtnDesign" onclick="leftScoreReset()">Reset</button>
+                </div>
+            </div>
+
+            <div class="rightScorePart">
+                <span class="teamName">Team B</span>
+                <div id="rightBoard">0</div>
+                <div class="buttonsRow">
+                    <button class="BtnDesign" onclick="rightScorePlus()">+</button>
+                    <button class="BtnDesign" onclick="rightScoreMinus()">-</button>
+                    <button class="BtnDesign" onclick="rightScoreReset()">Reset</button>
+                </div>      
+            </div>
+        </div>
+        <button class="saveBtnDesign" onclick="save()">Save result</button>
+        <div id="resultPrompt"></div>
+        <script src="indes.js"></script>
+    </body>
+</html>
